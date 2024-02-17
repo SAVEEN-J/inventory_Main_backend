@@ -33,18 +33,6 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
-// app.use((req, res, next) => {
-//   const allowedOrigins = ['https://inventory-main-f.netlify.app', 'http://localhost:3000'];
-//   const origin = req.headers.origin;
-//   if (allowedOrigins.includes(origin)) {
-//     res.setHeader('Access-Control-Allow-Origin', origin);
-//   }
-//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   res.setHeader('Access-Control-Allow-Credentials', 'true'); 
-//   next();
-// });
-
 // Initialize Cloudinary with your credentials
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
