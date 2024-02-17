@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://stunning-crumble-ecf75d.netlify.app/"],
+    origin: ["http://localhost:3000", "https://main--inventory-main-f.netlify.app/"],
     credentials: true,
   })
 );
